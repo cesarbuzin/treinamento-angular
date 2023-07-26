@@ -23,7 +23,7 @@
         </div>
       </form>
 
-        <div class="card mb-4 gradient-custom" style="border-radius: 25px">
+        <div class="card mb-4 gradient-custom" style="border-radius: 25px" *ngIf="cidade.nome.length > 0">
           <div class="card-body p-4">
             <div id="demo1" class="carousel slide" data-ride="carousel">
               <!-- Carousel inner -->
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="card" style="border-radius: 25px">
+        <div class="card" style="border-radius: 25px" *ngIf="listDias.length > 0">
           <div class="card-body" >
             <div *ngFor="let dia of listDias" class="d-flex row">
               <div class="col-1" ></div>
