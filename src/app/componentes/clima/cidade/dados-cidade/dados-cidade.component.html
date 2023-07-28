@@ -1,0 +1,49 @@
+<div
+  class="card mb-4 gradient-custom"
+  style="border-radius: 25px"
+  *ngIf="cidade.nome.length > 0"
+>
+  <div class="card-body p-4">
+    <div id="demo1" class="carousel slide" data-ride="carousel">
+      <!-- Carousel inner -->
+
+      <div class="d-flex justify-content-between mb-4 pb-2">
+        <div>
+          <h2 class="display-2">
+            <strong>{{ cidade.nome }}, {{ cidade.pais }}</strong>
+          </h2>
+          <p class="text-muted mb-0">
+            {{ cidade.diaSemana }}, {{ cidade.dataHora | date : "HH:mm" }},
+            {{ cidade.descricao }}
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://openweathermap.org/img/wn/{{ cidade.icon }}@2x.png"
+            width="150px"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="border-radius: 25px" *ngIf="listDias.length > 0">
+  <div class="card-body">
+    <div *ngFor="let dia of listDias" class="d-flex row">
+      <div class="col-1"></div>
+      <div class="div_weather text-left col-4">
+        <strong>{{ dia.descricao }}</strong>
+      </div>
+      <div class="div_weather col-2">
+        <img src="https://openweathermap.org/img/wn/{{ dia.icon }}.png" />
+      </div>
+      <div class="div_weather text-right col-4">
+        <strong
+          >{{ dia.tempMinima.toFixed(0) }}ºC /
+          {{ dia.tempMaxima.toFixed(0) }}ºC</strong
+        >
+      </div>
+    </div>
+  </div>
+</div>

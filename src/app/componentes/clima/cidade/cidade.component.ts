@@ -1,16 +1,16 @@
-import { DiaCidade } from './../cidade/dia-cidade';
-import { Cidade } from './../cidade/cidade';
-import { ClimaService } from './../../servicos/clima.service';
+import { DiaCidade } from './dia-cidade';
+import { Cidade } from './cidade';
+import { ClimaService } from '../servicos/clima.service';
 import { Component, OnInit } from '@angular/core';
 import { ThisReceiver } from '@angular/compiler';
 import { map } from 'rxjs';
 
 @Component({
-  selector: 'app-filtro-cidade',
-  templateUrl: './filtro-cidade.component.html',
-  styleUrls: ['./filtro-cidade.component.css'],
+  selector: 'app-cidade',
+  templateUrl: './cidade.component.html',
+  styleUrls: ['./cidade.component.css'],
 })
-export class FiltroCidadeComponent implements OnInit {
+export class CidadeComponent implements OnInit {
   cidadeFiltro = '';
 
   public cidade: Cidade = {

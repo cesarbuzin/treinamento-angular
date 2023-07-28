@@ -1,7 +1,7 @@
-import { Cidade } from './../clima/cidade/cidade';
-import { DiaCidade } from './../clima/cidade/dia-cidade';
+import { Cidade } from '../cidade/cidade';
+import { DiaCidade } from '../cidade/dia-cidade';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../../environments/environment';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 

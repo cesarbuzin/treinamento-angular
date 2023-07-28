@@ -1,0 +1,29 @@
+<section>
+  <div class="container py-5 h-100">
+    <div
+      class="row d-flex justify-content-center align-items-center h-100"
+      style="color: #282828"
+    >
+      <div >
+        <form>
+        <div class="col-md-9 col-lg-7 col-xl-5">
+          <div class="card mb-4" style="border-radius: 25px">
+            <div class="card-body p-4">
+              <input
+                type="textarea"
+                class="input"
+                id="cidade"
+                name="cidade"
+                placeholder="Digite o nome da cidade"
+                [(ngModel)]="cidadeFiltro"
+                (keyup)="atualizarTempo()"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+      <app-dados-cidade [cidade]="cidade" [listDias]="listDias"></app-dados-cidade>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FiltroCidadeComponent } from './filtro-cidade.component';
+import { DadosCidadeComponent } from './dados-cidade.component';
 
-describe('FiltroCidadeComponent', () => {
-  let component: FiltroCidadeComponent;
-  let fixture: ComponentFixture<FiltroCidadeComponent>;
+describe('DadosCidadeComponent', () => {
+  let component: DadosCidadeComponent;
+  let fixture: ComponentFixture<DadosCidadeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FiltroCidadeComponent ]
+      declarations: [ DadosCidadeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FiltroCidadeComponent);
+    fixture = TestBed.createComponent(DadosCidadeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

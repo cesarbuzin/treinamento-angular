@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FiltroCidadeComponent } from './componentes/clima/filtro-cidade/filtro-cidade.component';
+import { CidadeComponent } from './componentes/clima/cidade/cidade.component';
+import { DadosCidadeComponent } from './componentes/clima/cidade/dados-cidade/dados-cidade.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FiltroCidadeComponent
+    CidadeComponent,
+    DadosCidadeComponent
   ],
   imports: [
     BrowserModule,
